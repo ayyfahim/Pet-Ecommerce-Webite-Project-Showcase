@@ -1,0 +1,12 @@
+.wrapper{
+  @apply flex items-start mb-4 ;
+  .checkbox{
+    @apply  h-5 w-5 rounded-sm border-2 border-middle-white text-orange mr-2 focus:ring-white;
+    &:checked {
+      border: none;
+    } 
+  }
+  .title{
+    @apply text-sm text-medium_black;
+  } 
+}

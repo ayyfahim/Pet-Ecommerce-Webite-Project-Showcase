@@ -1,0 +1,164 @@
+.reviewSection {
+  padding: 0 20px;
+  @apply flex flex-col container mx-auto
+}
+.review_header {
+  @apply flex flex-row justify-start align-bottom
+}
+.flexCol {
+  @apply flex flex-col
+}
+.flexRow {
+  @apply flex flex-row justify-between items-center
+}
+.flexStart {
+  @apply flex flex-row justify-start align-bottom
+}
+.review_top {
+  @apply flex flex-row justify-between items-center
+}
+.reviewIconField {
+  @apply flex flex-row justify-start items-end
+}
+.review_dec {
+  margin-left: 5px;
+  @apply flex flex-row justify-start items-end
+}
+.width {
+
+}
+.reviewImg {
+  width: 17px!important;
+  height: 16px!important;
+  margin: 6px 3px 5px 0px;
+}
+.smallFont {
+  font-family: PlusJakartaSans;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #3b3b3b;
+  margin-left: 7px;
+  @apply font-medium tracking-normal
+}
+.title {
+  font-family: PlusJakartaSans;
+  font-size: 24px;
+  line-height: 1.83;
+  color: #4a2072;
+  @apply font-bold tracking-normal
+}
+.reviewNum {
+  font-family: PlusJakartaSans;
+  font-size: 40px;
+  line-height: 1.1;
+  color: #3b3b3b;
+  margin-right: 7px;
+  @apply font-bold tracking-normal
+}
+.reveiwBtn {
+  width: 152px;
+  height: 44px;
+  padding: 13px 26px;
+  border-radius: 8px;
+  background-color: #f8b84a;
+  font-family: PlusJakartaSans;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  color: #4a2072;
+  @apply font-bold tracking-normal text-center outline-0
+}
+.border_bottom {
+  margin: 36px 0 37px 0;
+  border-bottom: 1px solid #dbdbdb!important;
+}
+.review_title {
+  font-family: PlusJakartaSans;
+  font-size: 16px;
+  color: #3b3b3b;
+  margin-right:12px;
+  @apply font-bold tracking-normal leading-normal
+}
+.review_date {
+  font-family: PlusJakartaSans; 
+  font-size: 12px;
+  color: #6d7278;
+  @apply font-normal tracking-normal leading-normal
+}
+.review_text {
+  font-family: PlusJakartaSans;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #3b3b3b;
+  @apply font-normal tracking-normal leading-normal
+}
+.pointer {
+  @apply cursor-pointer
+}
+.pagination {
+  @apply flex flex-row justify-center items-center w-full
+}
+.pagination_icons {
+  margin-top: 40px;
+  @apply flex flex-row justify-between items-center
+}
+.pagination_icons2 {
+  margin-top: 40px;
+  display: none;
+}
+.pagination_item {
+  width: 40px;
+  height: 40px;
+  margin: 0 6px;
+  padding: 7px 12px;
+  border-radius: 12px;
+  border: solid 2px #d1d1d6;
+  font-family: PlusJakartaSans;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #303030;
+  @apply flex flex-row justify-center items-center font-normal tracking-normal text-center
+}
+.acitive_pagination_item {
+  width: 40px;
+  height: 40px;
+  padding: 7px 12px;
+  margin: 0 6px;
+  border-radius: 12px;
+  border: solid 2px #ea3e70;
+  font-family: PlusJakartaSans;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #303030;
+  @apply font-normal tracking-normal text-center
+}
+.active_border {
+  border: solid 2px #ea3e70;
+}
+
+@media screen and (max-width: 1024px) {
+  .review_top {
+      margin-top: 12px;
+      @apply flex flex-col justify-start items-start
+  }
+  .reveiwBtn {
+      margin-top: 20px;
+      margin-bottom: 12px;
+      padding: 5px 10px;
+      border-radius: 8px;
+      background-color: #f8b84a;
+  }
+  .border_bottom {
+      margin: 20px 0 20px 0;
+  }
+  .reviewIconField {
+      margin: 6px 0 5px 0;
+  }
+  .pagination_icons {
+      display: none;
+  }
+  .pagination_icons2 {
+      display: block;
+      width: 100%;
+      @apply flex flex-row justify-between items-center
+  }
+}

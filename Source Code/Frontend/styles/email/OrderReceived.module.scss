@@ -1,0 +1,65 @@
+.textBold {
+  @apply text-sm text-middle-black font-bold;
+}
+
+.textPara {
+  @apply text-sm text-middle-black font-medium;
+}
+
+.textPara2 {
+  @apply text-sm;
+  color: #262624;
+}
+
+.textPink {
+  @apply text-sm font-bold;
+  color: #f04571;
+}
+
+.textPinkL {
+  @apply text-base font-bold;
+  color: #f04571;
+}
+
+.textGray {
+  @apply text-sm font-medium;
+  color: #7a7a7a;
+}
+
+.textGray2 {
+  @apply text-sm;
+  color: #7a7a7a;
+}
+
+.textPurple {
+  @apply text-sm font-bold;
+  color: #4a2072;
+}
+
+.textItalic {
+  @apply text-sm italic;
+  color: #2d2d2b;
+}
+
+.textPurpleL {
+  @apply text-base font-bold;
+  color: #4a2072;
+}
+
+.textBoldL {
+  @apply text-xl font-bold;
+  color: #262624;
+}
+
+.grayBorder {
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.lineHeight {
+  @apply leading-7;
+}
+
+.lineHeightL {
+  @apply leading-8;
+}

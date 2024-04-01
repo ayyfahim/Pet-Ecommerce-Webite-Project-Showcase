@@ -1,0 +1,36 @@
+.main {
+  .wrapper {
+    @apply container mx-auto px-4;
+  }
+}
+
+.header {
+  @apply pt-20px;
+  span {
+    @apply text-lighter-gray text-sm;
+  }
+
+  h4 {
+    @apply text-4xl font-bold text-purple;
+    line-height: 1.33;
+  }
+
+  p {
+    @apply text-base text-full-black;
+    line-height: 1.56;
+  }
+}
+
+.product {
+  @apply m-0 xl:w-1/4 px-4;
+  a {
+    height: 467px;
+  }
+  &.featured {
+    @apply xl:w-2/4;
+    a {
+      height: 467px;
+      background-color: #fbf7ff;
+    }
+  }
+}

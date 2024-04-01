@@ -1,0 +1,250 @@
+.description_field {
+    padding: 0 20px;
+    @apply flex flex-col container mx-auto
+}
+.description_field2 {
+    display: none;
+}
+.dec_titleField {
+    width: 35%;
+    margin-top: 64px;
+    @apply flex flex-row justify-between
+}
+.dec_body {
+    @apply flex flex-row justify-between 
+}
+.dec_body2 {
+    @apply flex flex-row justify-between 
+}
+.flexCol {
+    @apply flex flex-col
+}
+.flexRow {
+    @apply flex flex-row justify-between
+}
+.width30 {
+    width: 35%;
+    margin-top: 64px;
+}
+.pointer {
+    @apply cursor-pointer
+}
+.mediumFont {
+    font-family: PlusJakartaSans;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #3b3b3b;
+    @apply font-bold tracking-normal
+}
+.active_color {
+    color: #ea3e70;
+}
+.active_mediumBorder {
+    border-bottom: 3px solid #ea3e70;
+    margin-top: 5px;
+}
+.border {
+    border-bottom: 1px solid #dbdbdb;
+    width: 100%;
+}
+
+.icon {
+    min-height: 25px;
+    min-width: 25px;
+}
+
+.description {
+    width: 55%;
+    margin-top: 32px;
+}
+.dec_title {
+    font-family: PlusJakartaSans;
+    font-size: 24px;
+    line-height: 1.83;
+    color: #4a2072;
+    @apply font-bold tracking-normal
+}
+.dec_text {
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+    color: #3b3b3b;
+    @apply font-normal tracking-normal leading-6
+}
+.small_title {
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+    color: #262624;
+    margin-top: 32px;
+    @apply font-bold tracking-normal leading-normal
+}
+.small_text {
+    font-family: PlusJakartaSans;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #262624;
+    margin-top: 8px;
+    @apply font-normal tracking-normal
+}
+.ul {
+    list-style-type:disc;
+    margin-left: 20px;
+}
+.fontBold {
+    @apply font-bold
+}
+.specifications {
+    width: 40%;
+    margin-top: 32px;
+}
+.specifications_field {
+    padding: 20px 24px;
+    border-radius: 8px;
+    background-color: #ffecf1;
+    margin-top: 8px;
+    @apply flex flex-col;
+}
+.spec_border {
+    margin: 16px -24px;
+    border-bottom: solid 1px #cfc2dc;
+}
+.spec_border1 {
+    margin: 8px 0;
+    border-bottom: solid 1px #cfc2dc;
+}
+.spec_text_item {
+    margin-top: 8px;
+    @apply flex justify-between items-center
+}
+.nut_filed_item {
+    margin-top: 16px;
+    @apply flex flex-row justify-between items-center
+}
+.text_align_right {
+    text-align: right;
+}
+.spec_bottom {
+    font-family: PlusJakartaSans;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #3b3b3b;
+    margin-bottom: 12px;
+    @apply tracking-normal font-normal
+}
+.description_title, .ingredients_title, .direction_title {
+    margin: 16px 0px 12px 0;
+    font-family: PlusJakartaSans;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #4a2072;
+    @apply font-bold tracking-normal
+}
+.description_title, .ingredients_title, .direction_title {
+    display: none;
+}
+.ingredients_select {
+    display: none;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .dec_titleField {
+        width: 50%;
+        margin-top: 34px;
+        @apply flex flex-row justify-between
+    }
+}
+@media screen and (max-width: 1024px) {
+    .dec_titleField {
+        width: 60%;
+        margin-top: 34px;
+        @apply flex flex-row justify-between
+    }
+    .dec_body {
+        @apply flex flex-col 
+    }
+    .dec_body2 {
+        @apply flex flex-col 
+    }
+    .description {
+        width: 100%;
+    }
+    .specifications {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .dec_titleField {
+        width: 70%;
+        margin-top: 34px;
+        @apply flex flex-row justify-between
+    }
+}
+@media screen and (max-width: 570px) {
+    .dec_titleField {
+        width: 100%;
+        margin-top: 34px;
+        @apply flex flex-row justify-between
+    }
+    .dec_titleField {
+        display: none;
+    }
+    .description_title, .ingredients_title, .direction_title {
+        display: block;
+    }
+    .ingredients_select {
+        display: block;
+    }
+
+
+    .description {
+        margin-top: 0;
+    }
+    .description_field {
+        display: none;
+    }
+    .description_field2 {
+        display: block;
+        padding: 0 20px;
+        @apply flex flex-col container mx-auto
+    }
+    .dec_field, .ing_field, .dir_field {
+        padding: 16px 0;
+        @apply flex justify-between items-center
+    }
+    .border_top {
+        border-top: 1px solid #d7d7d7 ;
+        margin: 0 -20px;
+    }
+    .specifications_field {
+        margin-bottom: 40px;
+    }
+    .dec_title {
+        font-size: 20px;
+    }
+    .description {
+        margin-top: 0px;
+    }
+    .border {
+        display: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .spec_text_item {
+        margin-top: 20px;
+        @apply flex flex-col justify-start items-start
+    }
+    .dec_text {
+        margin-top: 0px;
+    }
+    .nut_filed_item {
+        font-size: 14px;
+    }
+    .specifications_field {
+        padding: 10px 16px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .mediumFont {
+        font-size: 16px;
+    }
+}

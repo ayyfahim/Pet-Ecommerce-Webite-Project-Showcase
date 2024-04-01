@@ -1,0 +1,80 @@
+@mixin font-mixin($font-size, $font-weight, $color) {
+  font-family: PlusJakartaSans;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color;
+}
+
+.wishlistImg {
+  @apply w-24 h-24 relative;
+}
+
+.editProfile {
+  @apply flex flex-row flex-wrap;
+}
+
+.title {
+  @include font-mixin(20px, bold, #4a2072);
+  line-height: 1.38;
+  @screen md {
+    @include font-mixin(32px, bold, #4a2072);
+  }
+}
+
+.MyPagination {
+  display: table;
+  margin: 40px auto 0 auto;
+}
+
+.wishlistBox {
+  @apply mt-25px;
+  .wishlistItem {
+    @apply mb-17px p-29px rounded-2xl border border-solid border-dark-white flex flex-wrap lg:flex-row flex-col;
+
+    @media (max-width: 1024px) {
+      @apply justify-center;
+
+      div {
+        @apply text-center;
+      }
+    }
+
+    &::last-child {
+      @apply mb-0;
+    }
+
+    .wishListInfo {
+      @apply ml-21px flex-1;
+      h4 {
+        @apply text-base font-bold text-lighter-black mb-9px;
+      }
+      p {
+        @apply text-sm text-lighter-black mb-9px;
+      }
+
+      .wishListAction {
+        @apply mt-25px flex flex-row justify-between items-center;
+
+        a {
+          @apply text-sm text-purple;
+        }
+
+        b {
+          @apply text-lg text-lighter-black;
+        }
+
+        @media (max-width: 1024px) {
+          @apply flex-col;
+
+          a {
+            @apply mb-25px;
+          }
+        }
+      }
+    }
+  }
+}

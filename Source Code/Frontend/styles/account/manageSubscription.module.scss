@@ -1,0 +1,76 @@
+@mixin font-mixin($font-size, $font-weight, $color) {
+  font-family: PlusJakartaSans;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color;
+}
+
+.title {
+  @include font-mixin(20px, bold, #4a2072);
+  line-height: 1.38;
+  margin-bottom: 30px;
+
+  @screen md {
+    @include font-mixin(32px, bold, #4a2072);
+  }
+}
+
+.subscriptionBox {
+  .subscriptionItem {
+    @apply text-base text-lighter-black rounded-2xl border-solid border-dark-white border mb-17px overflow-hidden;
+
+    &.active {
+      @apply overflow-auto;
+    }
+
+    &.active &::last-child {
+      @apply mb-0;
+    }
+
+    .order_header {
+      @apply text-lg;
+    }
+  }
+}
+
+.mySelect {
+  height: 44px;
+  div:first-child {
+    height: 100%;
+  }
+  @apply text-sm font-bold text-lighter-black;
+}
+
+.incDecBtn {
+  @apply flex flex-row flex-wrap items-center justify-between h-[44px] border rounded-lg border-more-lighter-gray border-solid px-[4px] py-10px;
+  width: 104px;
+  height: 44px;
+  button {
+    @apply w-25px h-25px;
+
+    svg {
+      @apply w-25px h-25px;
+    }
+  }
+
+  input {
+    @apply w-31px h-25px p-0 border-0 text-lg text-more-darker-gray font-bold text-center pb-[2px];
+
+    &:focus {
+      @apply border-transparent bg-transparent outline-transparent shadow-none ring-0;
+    }
+  }
+
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+  input[type='number'] {
+    -moz-appearance: textfield; /* Firefox */
+  }
+}

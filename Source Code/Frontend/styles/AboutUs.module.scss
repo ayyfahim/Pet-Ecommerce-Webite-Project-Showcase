@@ -1,0 +1,51 @@
+// Global
+.main form {
+  @apply mx-auto mt-[14px] mb-[36px];
+}
+
+.wrapper {
+  @apply flex justify-center w-full;
+}
+
+.content {
+  @apply w-full container mx-4 sm:mx-0;
+}
+
+.section_title {
+  @apply lg:text-40px md:text-4xl sm:text-3xl text-xl font-bold text-purple leading-none;
+}
+
+.section_desc {
+  @apply xl:text-base sm:text-sm text-base font-normal text-lighter-black;
+}
+
+.section_title_white {
+  @apply lg:text-40px md:text-4xl sm:text-3xl text-xl font-bold text-white leading-none;
+}
+
+.section_desc_white {
+  @apply xl:text-base sm:text-sm text-base font-normal text-white;
+}
+
+// Page
+.whySection {
+  background-image: url('/img/about-us/why.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.offerSection {
+  background-image: radial-gradient(circle at 50% 44%, #793bb7, #4a2072 97%);
+}
+
+.offerImg {
+  width: 360px;
+  height: 360px;
+  @apply md:block hidden;
+
+  @screen lg {
+    width: 409px;
+    height: 409px;
+  }
+}

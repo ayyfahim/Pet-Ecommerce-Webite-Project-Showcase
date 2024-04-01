@@ -1,0 +1,40 @@
+version: '3.8'
+
+volumes:
+  node:
+  next:
+
+services:
+  vital.pv:
+    container_name: vital.pv
+    restart: always
+    working_dir: /home/node/app
+    build:
+      dockerfile: Dockerfile
+      context: ./
+      args:
+        user: '${UID}:${GID}'
+        USER_NAME: ${USERNAME}
+        USER_ID: ${UID}
+        GROUP_ID: ${GID}
+    ports:
+      - '3007:3000'
+    expose:
+      - 3000
+    environment:
+      VIRTUAL_HOST: vital.pv
+      VIRTUAL_PORT: 3000
+      NEXT_PUBLIC_APP_URL: https://vital.pv
+    volumes:
+      - .:/home/node/app
+      - node:/home/node/app/node_modules
+      - next:/home/node/app/.next
+      - ./docker/pnpm-store:/home/node/.local/share/pnpm/store/v3
+      - ./docker/.pnpm:/home/node/app/.pnpm
+    networks:
+      - pagevamp
+    command: "pnpm dev"
+
+networks:
+  pagevamp:
+    external: true

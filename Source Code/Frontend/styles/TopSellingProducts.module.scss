@@ -1,0 +1,149 @@
+@mixin fontMixin($fs, $fw, $c) {
+  font-family: PlusJakartaSans;
+  font-size: $fs;
+  font-weight: $fw;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $c;
+}
+
+.wrapper {
+  @apply container mx-auto;
+}
+
+.heading {
+  font-size: 1.25rem;
+  @apply text-purple text-center font-bold mb-3;
+}
+.products {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  @apply flex flex-nowrap mb-5 lg:justify-between xl:justify-center;
+  margin-top: 44px;
+  margin-bottom: 80px;
+  @media screen and (max-width: 680px) {
+    margin-left: 20px;
+  }
+}
+
+.products::-webkit-scrollbar {
+  display: none;
+}
+.description {
+  font-size: 1rem;
+  @apply text-darker-gray text-center mb-2 px-3 max-w-2xl mx-auto;
+}
+
+@screen sm {
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+@screen md {
+  .products {
+    @apply mb-16;
+  }
+}
+
+.product {
+  margin-right: 32px;
+  padding: 38px 38px 28px 38px;
+  min-width: 286px;
+  height: 467px;
+  border-radius: 15px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .priceMedia {
+    display: none;
+  }
+  h4 {
+    @include fontMixin(16px, bold ,#262624 );
+    margin-top: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+  }
+  p {
+    @include fontMixin(16px, normal ,#262624 );
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    box-orient: vertical;
+    flex-grow: 1;
+  }
+  .PriceAndAddButton {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 21px;
+    span {
+      @include fontMixin(20px, bold, #262624)
+    }
+    button {
+      width: 136px;
+      height: 45px;
+      border-radius: 8px;
+      background-color: #f8b84a;
+      font-family: PlusJakartaSans;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.28px;
+      text-align: center;
+      color: #4a2072;
+    }
+  }
+  @media screen and (max-width: 680px) {
+    max-height: 383px;
+    min-width: 259px;
+    padding: 26px 0 26px 0;
+    .ProductImg {
+      width: 110px !important;
+      height: 110px !important;
+    }
+    .priceMedia {
+      display: inline;
+      margin-top: 13px;
+      @include fontMixin(16px, bold ,#262624 );
+    }
+    h4 {
+      margin-top: 8px;
+    }
+    .PriceAndAddButton {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 21px;
+      span {
+        display: none;
+      }
+      button {
+        width: 220px;
+        height: 44px;
+      }
+    }
+  }
+}

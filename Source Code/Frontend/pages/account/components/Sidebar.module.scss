@@ -1,0 +1,111 @@
+@mixin font-mixin($font-size, $font-weight, $color) {
+  font-family: PlusJakartaSans;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color;
+}
+
+.sidebar {
+  width: 100%;
+  padding: 40px 0;
+  border-radius: 16px;
+  border: solid 1px #e7e7e7;
+  background-color: #fff;
+
+  @apply hidden md:block self-baseline;
+
+  @media (max-width: 768px) {
+    &.opened {
+      @apply block;
+    }
+  }
+
+  @screen md {
+    width: 27%;
+  }
+
+  @screen lg {
+    width: 26%;
+  }
+
+  @screen xl {
+    width: 22%;
+  }
+
+  @media (max-width: 1024px) and (min-width: 768px) {
+    padding: 25px 0;
+  }
+
+  .accountInfo {
+    @apply pb-[16px] mb-[12px] text-center mx-auto;
+    border-bottom: 1px solid #d7d7d7;
+
+    .avatarImg {
+      @apply mx-auto w-[85px] h-[85px] mb-[16px];
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    h4 {
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+
+      @include font-mixin(20px, bold, #262624);
+    }
+
+    @media (max-width: 1024px) and (min-width: 768px) {
+      h4 {
+        @apply text-lg;
+      }
+
+      .avatarImg {
+        @apply w-[70px] h-[70px] mb-[10px];
+      }
+    }
+  }
+
+  ul {
+    li {
+      @apply flex items-center pl-[30px] py-[15px] cursor-pointer;
+      .sidebarIcon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      @include font-mixin(16px, normal, #262624);
+
+      &.active {
+        padding-left: 26px;
+        border-left: 4px solid #ea3e70;
+        color: #ea3e70;
+      }
+
+      &.signout {
+        @apply text-lighter-gray;
+      }
+
+      @media (max-width: 1024px) and (min-width: 768px) {
+        @apply pl-[17px] py-[12px] text-sm;
+
+        .sidebarIcon {
+          width: 17px;
+          height: 17px;
+        }
+
+        &.active {
+          padding-left: 15px;
+          border-left-width: 2px;
+        }
+      }
+    }
+  }
+}

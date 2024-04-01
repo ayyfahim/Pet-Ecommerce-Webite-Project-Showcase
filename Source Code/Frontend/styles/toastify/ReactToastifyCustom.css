@@ -1,0 +1,60 @@
+.Toastify__toast-container--top-right {
+  width: 477px;
+}
+
+.Toastify__toast-theme--light {
+  border-radius: 20px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.06);
+  padding: 28px;
+}
+
+.Toastify__toast-theme--light.Toastify__toast--success {
+  background-color: #51ac5c;
+}
+
+.Toastify__toast-theme--light.Toastify__toast--error {
+  background-color: #ff5857;
+}
+
+.Toastify__toast-theme--light .Toastify__toast-body {
+  font-family: PlusJakartaSans;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.Toastify__toast-theme--light .Toastify__toast-customHeader {
+  font-family: PlusJakartaSans;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.Toastify__toast-theme--light .Toastify__toast-icon {
+  width: 32px;
+  height: 32px;
+  margin-inline-end: 12px;
+}
+
+.Toastify__close-button {
+  opacity: 1;
+}
+
+.Toastify__close-button {
+  width: 16px;
+  height: 16px;
+}
+
+/* .Toastify__close-button:hover,
+.Toastify__close-button:focus {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+} */

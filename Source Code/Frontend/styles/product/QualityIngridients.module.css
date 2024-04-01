@@ -1,0 +1,22 @@
+.wrapper {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    @apply bg-light-purple px-4 text-center
+}
+
+.sectionHeading {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    @apply text-purple font-bold
+}
+
+.heading {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    @apply text-lighter-black font-bold
+}
+
+.paragraph {
+    margin-bottom: 1.5rem;
+    @apply text-darker-gray
+}

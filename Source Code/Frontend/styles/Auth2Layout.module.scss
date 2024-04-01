@@ -1,0 +1,33 @@
+.wrapper {
+  background-image: radial-gradient(circle at 50% 44%, hsl(270, 51%, 47%), #4a2072 92%);
+  @apply flex flex-col justify-between min-h-screen items-center pt-12 sm:pt-28 px-2 pb-5 sm:pb-6 sm:px-6 lg:px-8 border-none;
+  .image {
+    @apply mx-auto flex justify-center lg:mb-0 mb-6;
+  }
+  .contentWrapper {
+    @apply sm:mx-auto w-full xl:w-[1028px] lg:w-[900px] sm:w-510px mx-3 flex flex-row;
+    .squareBgImage {
+      @apply rounded-tl-xl rounded-bl-xl hidden lg:block;
+      background-image: url('/img/add-pet/bg.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 35%;
+    }
+    .square {
+      @apply bg-white py-8 sm:py-50px px-18px shadow rounded-xl lg:rounded-tl-none lg:rounded-bl-none sm:px-55px  ml-0 lg:flex-1;
+
+      main {
+        // position: relative;
+        @apply lg:relative;
+        // @apply h-[620px] overflow-y-scroll;
+      }
+    }
+  }
+  .bottomWrapper {
+    @apply flex justify-center flex-col sm:flex-row  mx-auto;
+    .bottom {
+      @apply leading-auth_bottom mx-auto text-xs text-white;
+    }
+  }
+}

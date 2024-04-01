@@ -1,0 +1,83 @@
+.wrapper {
+  @apply container mx-auto py-11 md:py-16;
+}
+
+.heading {
+  font-size: 1.25rem;
+  @apply text-purple font-bold text-center mb-5;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 52px;
+  @apply text-darker-gray text-center px-4 max-w-2xl mx-auto;
+}
+
+.blogs {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  @apply flex flex-nowrap;
+}
+
+.blogs::-webkit-scrollbar {
+  display: none;
+}
+
+.blog {
+  min-width: 255px;
+  width: 255px;
+  border-radius: 9.7px;
+  border: solid 0.6px #e8e8e8;
+  font-size: 0;
+  overflow: hidden;
+
+  @apply flex flex-col pb-6 mx-2 md:mx-4 md:pb-8;
+}
+
+.blogImage {
+}
+
+.blogDate {
+  padding: 0 18px;
+  @apply text-lighter-gray mt-3 text-base;
+}
+
+.blogTitle {
+  padding: 0 18px;
+  @apply font-bold mb-2 text-lg sm:text-xl text-lighter-black;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blogExcerpt {
+  padding: 0 18px;
+  @apply text-lighter-black text-base;
+}
+.blogExcerptContent {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.readMore {
+  @apply font-bold px-2 text-pink text-left;
+  display: inline-block;
+  padding: 0;
+}
+
+@screen md {
+  .blog {
+    width: 392px;
+    min-width: 392px;
+  }
+}
+
+@screen sm {
+  .heading {
+    font-size: 2.5rem;
+  }
+}

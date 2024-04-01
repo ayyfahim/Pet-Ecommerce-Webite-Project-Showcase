@@ -1,0 +1,22 @@
+.wrapper{
+  @apply mb-8;
+  .product{
+    @apply flex justify-between items-center mb-4;
+    .title{
+      @apply text-sm font-bold text-medium_black;
+    } 
+    .hiddenButton{
+      @apply flex justify-center items-center w-6 h-6;
+      
+    }
+  }
+  .checkWrapper{
+    @apply flex justify-start;
+    &.true{
+      @apply block;
+    }
+    &.false{
+      @apply hidden;
+    }
+  }
+}

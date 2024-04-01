@@ -1,0 +1,24 @@
+.wrapper{
+  @apply w-screen  sm:w-270px px-5 pt-5 pb-9  ;
+  .titleWrapper{
+    @apply mb-6 pr-2 flex justify-between items-center;
+    .title{
+      @apply text-lg font-bold;
+    }
+    .clear{
+      @apply font-extrabold text-xs text-pink;
+    }
+  }
+  .filterWrapper{
+    @apply mb-8;
+    .product{
+      @apply flex justify-between;
+      .title{
+        @apply text-sm font-bold text-medium_black;
+      } 
+      .hiddenButton{
+        @apply flex justify-center items-center w-2 h-2;
+      }
+    }
+  }
+}

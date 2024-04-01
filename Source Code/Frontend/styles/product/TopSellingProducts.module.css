@@ -1,0 +1,44 @@
+.wrapper {
+}
+
+.heading {
+    font-size: 1.25rem;
+    @apply text-purple text-center font-bold mb-3
+}
+
+.description {
+    font-size: 1rem;
+    @apply text-darker-gray text-center mb-2 px-3
+}
+
+.products {
+    @apply flex flex-col mb-5
+}
+
+.product {
+    margin: 1rem;
+    padding: 1rem;
+    border: solid 0.8px #e8e8e8;
+    @apply rounded flex flex-col text-center
+}
+
+.image {
+}
+
+.price {
+    @apply font-bold my-2
+}
+
+.title {
+    @apply font-bold my-2
+}
+
+.productDescription {
+    @apply my-2
+}
+
+.addToCart {
+    margin: 1rem 0;
+    padding: 13px 70px;
+    @apply text-purple bg-orange w-full rounded text-center font-bold
+}

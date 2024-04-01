@@ -1,0 +1,210 @@
+.root {
+  @apply container mx-auto flex flex-row flex-wrap p-4;
+  background-color: #fff;
+}
+
+.breadCrumbs {
+  height: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: PlusJakartaSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #909090;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #4a2072;
+  width: 100%;
+}
+
+.brandTitle {
+  font-family: PlusJakartaSans;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #3b3b3b;
+}
+
+.brandImgContainer {
+  margin-left: 19px;
+}
+
+.galeryRoot {
+  @apply flex flex-row flex-nowrap;
+}
+
+.galeryThumbsContainer {
+  height: 581px;
+  margin-right: 8px;
+  overflow: auto;
+}
+
+.galeryMain {
+}
+
+.galeryThumbImageContainer {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 8px;
+  object-fit: contain;
+  border-radius: 12px;
+  cursor: pointer;
+  /* add these when there will be pictures without border in them */
+  /* border: solid 1px #e8e8e8; */
+}
+
+.galeryThumbImageSelected {
+  /* add these when there will be pictures without border in them */
+  /* border: solid 1px #ea3e70; */
+}
+
+.productSidePanel {
+  margin-left: 70px;
+}
+
+.productPriceTitle {
+  width: 100%;
+  font-family: PlusJakartaSans;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.productPriceSubTitle {
+  font-family: PlusJakartaSans;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #909090;
+}
+
+.optionsTitle {
+  font-family: PlusJakartaSans;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: #4a2072;
+}
+
+.optionBox {
+  @apply flex-1;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: solid 1px #d7d7d7;
+  background-color: #fff;
+  font-family: PlusJakartaSans;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #606060;
+}
+
+.optionBoxSelected {
+  border: solid 2px #ea3e70;
+  color: #303030;
+}
+
+.buyOptionPrice {
+  font-family: PlusJakartaSans;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #606060;
+}
+
+.buyOptionPriceSub {
+  font-family: PlusJakartaSans;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #3b3b3b;
+}
+
+.fakeInputRoot {
+  width: 128px;
+  height: 62px;
+  margin: 0 9px 0 0;
+  padding: 19px 12px 18px;
+  border-radius: 8px;
+  border: solid 1px #d7d7d7;
+  background-color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.addCartBtn {
+  @apply flex-1;
+  eight: 62px;
+  border-radius: 8px;
+  background-color: #f8b84a;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a2072;
+}
+
+.tabContentWideTab {
+  width: 709px;
+}
+
+.tabContentTitle {
+  font-family: PlusJakartaSans;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  color: #4a2072;
+  margin-bottom: 8px;
+}
+
+.tabContentText {
+  font-family: PlusJakartaSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #3b3b3b;
+  padding-bottom: 8px;
+}

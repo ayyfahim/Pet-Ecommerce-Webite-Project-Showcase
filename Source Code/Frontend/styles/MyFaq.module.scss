@@ -1,0 +1,42 @@
+.expandBtn {
+  @apply flex items-center text-base font-bold text-pink;
+
+  svg {
+    @apply w-21px h-21px mr-10px;
+  }
+}
+
+.section_title {
+  @apply lg:text-40px md:text-4xl sm:text-3xl text-xl font-bold text-purple;
+}
+
+.faqBox {
+  .faqItem {
+    border-bottom: solid 1px #444346;
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+    &:last-child {
+      @apply border-0;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    .disclosureButton {
+      @apply flex w-full justify-between text-xl font-bold text-lighter-black text-left;
+
+      .arrow {
+        @apply text-lg;
+
+        &.active {
+          @apply rotate-180 transform;
+        }
+      }
+    }
+    .disclosurePanel {
+      @apply xl:text-base sm:text-sm text-base font-normal text-lighter-black pt-17px;
+    }
+  }
+}

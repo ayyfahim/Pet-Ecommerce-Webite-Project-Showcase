@@ -1,0 +1,50 @@
+@mixin font-mixin($font-size, $font-weight, $color) {
+  font-family: PlusJakartaSans;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color;
+}
+
+.title {
+  @include font-mixin(20px, bold, #4a2072);
+  line-height: 1.38;
+  margin-bottom: 30px;
+
+  @screen md {
+    @include font-mixin(32px, bold, #4a2072);
+  }
+}
+
+.mainBody {
+  @apply bg-white md:bg-light-purple w-full h-full;
+
+  .wrapper {
+    @apply container mx-auto py-0 md:py-8 flex flex-nowrap flex-col md:flex-row;
+    background-color: #fbf7ff;
+
+    .contentWrapper {
+      border: solid 1px #e7e7e7;
+      background-color: #fff;
+      flex: 0;
+      flex-grow: 1;
+      // padding: 40px 52px;
+      @apply ml-0 xl:ml-[60px] md:ml-[40px] pt-[26px] pb-[40px] px-[16px] xl:py-[40px] xl:px-[52px] lg:px-[45px] lg:py-[35px] md:px-[32px] md:py-[25px] rounded-none md:rounded-2xl border-transparent md:border-dark-white;
+    }
+  }
+}
+
+.editAdressBox {
+  @apply flex flex-col lg:flex-row flex-wrap;
+
+  .box {
+    @apply w-full lg:w-2/4;
+
+    .shortUrl {
+      @apply text-sm text-lighter-gray mb-11px block;
+    }
+  }
+}

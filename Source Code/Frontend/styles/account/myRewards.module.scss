@@ -1,0 +1,127 @@
+@mixin font-mixin($font-size, $font-weight, $color) {
+  font-family: PlusJakartaSans;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color;
+}
+
+.title {
+  @include font-mixin(20px, bold, #4a2072);
+  line-height: 1.38;
+  margin-bottom: 30px;
+
+  @screen md {
+    @include font-mixin(32px, bold, #4a2072);
+  }
+}
+
+.reward_box {
+  padding: 32px 20px 40px;
+  border: solid 1px #e7e7e7;
+
+  @apply rounded-2xl bg-white mb-[40px];
+
+  .reward_item {
+    @apply flex flex-wrap justify-between content-center pt-[32px] mt-[32px];
+    border-top: 1px solid #d7d7d7;
+
+    @media (max-width: 1024px) {
+      @apply flex-col;
+    }
+
+    &:first-child {
+      @apply mt-0 pt-0 border-none;
+    }
+
+    .reward_header {
+      @apply flex;
+
+      @media (max-width: 1024px) {
+        @apply flex-col text-center mb-[12px];
+      }
+
+      h6 {
+        @apply text-xl font-bold text-lighter-black mr-[8px];
+        line-height: 1.2;
+      }
+
+      a {
+        line-height: 1.5;
+        letter-spacing: normal;
+
+        @apply text-pink text-base font-normal underline;
+      }
+
+      @media (max-width: 1280px) {
+        h6 {
+          @apply text-lg;
+        }
+      }
+    }
+
+    .reward_info {
+      @apply mt-[8px] text-base text-lighter-black;
+      line-height: 1.25;
+      letter-spacing: normal;
+
+      @media (max-width: 1280px) {
+        @apply text-sm;
+      }
+
+      span {
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+
+        &:first-child {
+          padding-left: 0;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          @apply bg-lighter-black;
+
+          @media (max-width: 1024px) {
+            @apply hidden;
+          }
+        }
+
+        @media (max-width: 1024px) {
+          @apply block text-center;
+        }
+      }
+    }
+
+    .total_reward {
+      @apply text-xl font-bold text-dark-green text-right;
+
+      &.total_reward_negative {
+        @apply text-negative;
+      }
+
+      @media (max-width: 1024px) {
+        @apply text-center mt-[12px];
+      }
+    }
+  }
+}
+
+.MyPagination {
+  display: table;
+  margin: 0 auto 0 auto;
+}

@@ -1,0 +1,118 @@
+.wrapper {
+  padding: 450px 1rem 1rem;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0.1) 100%),
+    url('../public/img/how-it-works/how-it-works-bg@2x.webp') center 45px / 368px no-repeat;
+  @apply bg-light-purple;
+}
+
+.heading {
+  font-size: 1.25rem;
+  @apply font-bold text-purple text-center mb-4 sm:text-left;
+}
+
+.description {
+  font-size: 1rem;
+  @apply text-center text-darker-gray mb-5 max-w-2xl mx-auto sm:text-left sm:mx-0;
+}
+
+.image {
+  max-width: 409px;
+  max-height: 629px;
+  width: 80%;
+  @apply relative;
+}
+
+.image2 {
+  max-width: 175px;
+  right: 5px;
+  top: 72px;
+  font-size: 0px;
+  @apply absolute text-white flex items-center;
+}
+
+.features {
+  @apply py-2;
+}
+
+.feature {
+  margin-bottom: 3rem;
+  min-height: 110px;
+  @apply sm:flex;
+}
+
+.arrow1 {
+  width: 140px;
+  height: 100px;
+  top: 39px;
+  left: -43px;
+  @apply absolute inline-block hidden md:block;
+}
+
+.arrow2 {
+  width: 145px;
+  height: 100px;
+  top: 51px;
+  left: -69px;
+  @apply absolute inline-block hidden md:block;
+}
+
+.featureNumber {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  vertical-align: center;
+
+  @apply bg-purple text-white text-center font-bold mb-5 mx-auto sm:mx-0;
+}
+
+.featureTitle {
+  max-width: 520px;
+  font-size: 1.25rem;
+  @apply font-bold text-center text-lighter-black mb-2 sm:text-left mx-auto sm:mx-0;
+}
+
+.featureText {
+  max-width: 520px;
+  @apply text-center text-darker-gray sm:text-left mx-auto sm:mx-0;
+}
+
+@screen sm {
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+
+@screen md {
+  .wrapper {
+    @apply bg-light-purple bg-none pt-20;
+  }
+}
+
+@screen lg {
+  .image2 {
+    max-width: 212px;
+    right: 23px;
+    top: 105px;
+  }
+
+  .imageText {
+    font-size: 16px;
+    @apply pl-6 pr-2;
+  }
+}
+
+@screen xl {
+  .image2 {
+    max-width: 278px;
+    max-height: 157px;
+    right: 76px;
+    top: 103px;
+  }
+
+  .imageText {
+    font-size: 20px;
+    @apply pl-8 pr-4;
+  }
+}

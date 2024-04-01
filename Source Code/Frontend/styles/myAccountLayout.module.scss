@@ -1,0 +1,53 @@
+@mixin font-mixin($font-size, $font-weight, $color) {
+  font-family: PlusJakartaSans;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color;
+}
+
+.mainBody {
+  @apply bg-white md:bg-light-purple w-full h-full;
+
+  &.opened {
+    @apply bg-white;
+  }
+  .wrapper {
+    @apply container mx-auto py-0 md:py-8 flex flex-nowrap flex-col md:flex-row;
+    background-color: #fbf7ff;
+
+    &.opened {
+      @apply p-[16px];
+    }
+
+    .contentWrapper {
+      border: solid 1px #e7e7e7;
+      background-color: #fff;
+      flex: 0;
+      flex-grow: 1;
+      // padding: 40px 52px;
+      @apply ml-0 xl:ml-[60px] md:ml-[40px] pt-[26px] pb-[40px] px-[16px] xl:py-[40px] xl:px-[52px] lg:px-[45px] lg:py-[35px] md:px-[32px] md:py-[25px] rounded-none md:rounded-2xl border-transparent md:border-dark-white;
+
+      &.opened {
+        @apply hidden;
+      }
+    }
+  }
+}
+
+.backButton {
+  @apply block md:hidden text-left px-[16px] pt-[16px] pl-1 bg-white text-sm text-lighter-black;
+
+  svg {
+    @apply w-7 h-7 inline-block;
+  }
+
+  @media (max-width: 768px) {
+    &.opened {
+      @apply hidden;
+    }
+  }
+}

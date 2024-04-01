@@ -1,0 +1,61 @@
+/*!
+ * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@import "variables";
+@import "~@fortawesome/fontawesome-free/scss/mixins";
+@import "~@fortawesome/fontawesome-free/scss/core";
+@import "~@fortawesome/fontawesome-free/scss/larger";
+@import "~@fortawesome/fontawesome-free/scss/fixed-width";
+@import "~@fortawesome/fontawesome-free/scss/list";
+@import "~@fortawesome/fontawesome-free/scss/bordered-pulled";
+@import "~@fortawesome/fontawesome-free/scss/animated";
+@import "~@fortawesome/fontawesome-free/scss/rotated-flipped";
+@import "~@fortawesome/fontawesome-free/scss/stacked";
+@import "~@fortawesome/fontawesome-free/scss/icons";
+@import "~@fortawesome/fontawesome-free/scss/screen-reader";
+
+// Regular icons
+@font-face {
+	font-family: "Font Awesome 5 Free";
+	font-style: normal;
+	font-weight: 400;
+	src: url("#{$fa-font-path}/fa-regular-400.eot");
+	src: url("#{$fa-font-path}/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("#{$fa-font-path}/fa-regular-400.woff2") format("woff2"),
+		url("#{$fa-font-path}/fa-regular-400.woff") format("woff"), url("#{$fa-font-path}/fa-regular-400.ttf") format("truetype"), url("#{$fa-font-path}/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+.far {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 400;
+}
+
+// solid icons
+@font-face {
+	font-family: "Font Awesome 5 Free";
+	font-style: normal;
+	font-weight: 900;
+	src: url("#{$fa-font-path}/fa-solid-900.eot");
+	src: url("#{$fa-font-path}/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("#{$fa-font-path}/fa-solid-900.woff2") format("woff2"),
+		url("#{$fa-font-path}/fa-solid-900.woff") format("woff"), url("#{$fa-font-path}/fa-solid-900.ttf") format("truetype"), url("#{$fa-font-path}/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.fa,
+.fas {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+
+// Brands icons
+@font-face {
+	font-family: "Font Awesome 5 Brands";
+	font-style: normal;
+	font-weight: normal;
+	src: url("#{$fa-font-path}/fa-brands-400.eot");
+	src: url("#{$fa-font-path}/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("#{$fa-font-path}/fa-brands-400.woff2") format("woff2"),
+		url("#{$fa-font-path}/fa-brands-400.woff") format("woff"), url("#{$fa-font-path}/fa-brands-400.ttf") format("truetype"), url("#{$fa-font-path}/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+.fab {
+	font-family: "Font Awesome 5 Brands";
+}

@@ -1,0 +1,382 @@
+.myProfile {
+    @apply flex flex-col;
+    width: 70%;
+}
+.personalInfo {
+    /* width: 890px;
+    height: 456px; */
+    width: 91%;
+    padding: 40px 52px;
+    border-radius: 16px;
+    border: solid 1px #e7e7e7;
+    background-color: #fff;
+    margin-left: 64px;
+}
+.title {
+    @apply font-bold tracking-normal;
+    font-family: PlusJakartaSans;
+    font-size: 32px;
+    line-height: 1.38;
+    color: #4a2072;
+    margin-bottom: 24px;
+}
+.item_field {
+    @apply flex flex-row justify-between;
+}
+.margin_top {
+    margin-top: 20px
+}
+.item {
+    @apply flex flex-col;
+    width: 50%
+}
+.item_title {
+    @apply font-bold tracking-normal;
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+    color: #262624;
+}
+.item_name {
+    @apply font-normal tracking-normal;
+    height: 61px;
+    margin: 7px 0 0;
+    padding: 21px 0px 19px 19px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+    color: #262624;
+}
+.personalInfo_comment {
+    @apply font-normal tracking-normal;
+    margin: 4px 0px 28px 0;
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+.personalInfo_btn_field {
+    @apply flex justify-start
+}
+.save_btn {
+    @apply font-bold tracking-normal text-center;
+    width: 168px;
+    height: 44px;
+    margin: 0 8px 0 0;
+    padding: 13px 34px;
+    border-radius: 8px;
+    background-color: #f8b84a;
+    font-family: PlusJakartaSans;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    color: #4a2072;
+}
+.cancel_btn {
+    @apply font-bold tracking-normal text-center;
+    width: 168px;
+    height: 44px;
+    margin: 0 0 0 8px;
+    padding: 13px 59px;
+    border-radius: 8px;
+    border: solid 1px #f8b84a;
+    background-color: #fff;
+    font-family: PlusJakartaSans;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    color: #4a2072;
+}
+
+
+
+.myPets {
+    @apply flex flex-col;
+    /* width: 890px;
+    height: 562px; */
+    width: 91%;
+    margin: 12px 0px 40px 64px;
+    padding: 40px 52px 52px;
+    border-radius: 16px;
+    border: solid 1px #e7e7e7;
+    background-color: #fff;
+}
+.title_field {
+    @apply flex flex-row justify-between items-center;
+    margin-bottom: 24px;
+}
+.addPet_btn {
+    @apply font-bold tracking-normal text-center;
+    width: 172px;
+    height: 44px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+    border: solid 1px #f8b84a;
+    background-color: #fff;
+    font-family: PlusJakartaSans;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    color: #4a2072;
+}
+.myPets_item_field {
+    @apply flex flex-col;
+    width: 100%;
+    /* height: 193px; */
+    margin: 0px 0 16px;
+    padding: 12px 28px 28px;
+    border-radius: 16px;
+    border: solid 1px #e7e7e7;
+    background-color: #fff;
+}
+.myPets_item {
+    @apply flex flex-row justify-between items-center;
+}
+.pets_name_field {
+    @apply flex justify-start items-center;
+}
+.pets_img {
+    width: 72px;
+    height: 72px;
+    margin: 0 23px 0px 0;
+    padding: 12px 5px 7px;
+}
+.pets_name {
+    @apply flex flex-col
+}
+.pets_firstName {
+    @apply font-bold tracking-normal;
+    margin: 0 0 8px;
+    font-family: PlusJakartaSans;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #262624;
+}
+.pets_lastName {
+    @applyy font-normal tracking-normal;
+    margin: 8px 15px 0 0;
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #262624;
+}
+.pets_detail {
+    @apply flex flex-col;
+}
+.pets_detail_field {
+    @apply flex flex-row justify-between items-center;
+}
+.pets_detail_name {
+    @apply font-normal tracking-normal;
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #262624;
+}
+.fontBold {
+    font-weight: bold;
+}
+.margin_68 {
+    margin-right: 68px;
+}
+.margin_top_18 {
+    margin-top: 18px;
+}
+.pets_divider {
+    margin: 24px 0 12px;
+    border-top: 1px solid #d7d7d7;
+}
+.pets_footer {
+    @apply flex flex-row justify-between items-center;
+}
+.pets_footer_item {
+    @apply flex flex-row justify-between items-center;
+}
+.pets_edit_btn {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: PlusJakartaSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #4a2072;
+    margin-right: 10px;
+}
+.pets_remove_btn {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: PlusJakartaSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #4a2072;
+    margin-left: 10px;
+}
+.recommendedBtn {
+    @apply font-bold tracking-normal text-center;
+    width: 311px;
+    height: 44px;
+    padding: 13px 50px;
+    border-radius: 8px;
+    background-color: #f8b84a;
+    font-family: PlusJakartaSans;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    color: #4a2072;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .pets_detail {
+        margin-left: 10px;
+    }
+    .pets_name_field {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1086px) {
+    .myPets_item {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .pets_footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .recommendedBtn {
+        margin-top: 10px;
+    }
+    .personalInfo {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 810px) {
+    .myProfile {
+        margin: auto;
+        margin-top: 10px;
+        width: 400px;
+    }
+    .personalInfo {
+        width: 400px;
+        margin: auto;
+        margin-left: 0;
+        padding: 20px 26px;
+    }
+    .save_btn {
+        padding: 5px 0px;
+    }
+    .cancel_btn {
+        padding: 5px 0px;
+    }
+    .myPets {
+        width: 400px;
+        margin: auto;
+        margin-left: 0;
+        padding: 20px 26px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .pets_firstName {
+        font-size: 16px;
+    }
+    .pets_lastName {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .myProfile {
+        width: 286px;
+    }
+    .personalInfo {
+        width: 286px;
+        padding: 12px 14px;
+    }
+    .myPets {
+        width: 286px;
+        padding: 12px 14px;
+    }
+    .title {
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+    .item_title {
+        font-size: 14px;
+    }
+    .item_name {
+        height: 14px;
+        margin: 3px 0 0;
+        padding: 0px 0px 0px 0px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    .margin_top {
+        margin-top: 14px;
+    }
+    .personalInfo_comment {
+        margin: 15px 0px 15px 0;
+        font-size: 13px;
+    }
+    .save_btn {
+        width: 150px;
+        height: 35px;
+        margin: 0 8px 0 0;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .cancel_btn {
+        width: 150px;
+        height: 35px;
+        margin: 0 8px 0 0;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .addPet_btn {
+        width: 107px;
+        height: 36px;
+        padding: 4px 3px 4px 3px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .title_field {
+        margin-bottom: 12px;
+    }
+    .myPets_item_field {
+        margin: 0px 0 16px;
+        padding: 10px 12px 10px;
+        border-radius: 12px;
+    }
+    .pets_firstName {
+        font-size: 14px;
+    }
+    .pets_lastName {
+        font-size: 13px;
+    }
+    .pets_detail {
+        margin-left: 0;
+    }
+    .margin_68 {
+        margin-right: 38px;
+    }
+    .pets_detail_name {
+        font-size: 14px;
+    }
+    .recommendedBtn {
+        width: 210px;
+        height: 30px;
+        padding: 4px 0px;
+        border-radius: 8px;
+        background-color: #f8b84a;
+        font-family: PlusJakartaSans;
+        font-size: 12px;
+        letter-spacing: 0.28px;
+    }
+}

@@ -1,0 +1,22 @@
+@mixin font-mixin($font-size, $font-weight, $color) {
+  font-family: PlusJakartaSans;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color;
+}
+
+.btnSecondarySmall {
+  letter-spacing: 0.28px;
+
+  @include font-mixin(14px, bold, purple);
+  border: solid 1px;
+  @apply bg-white text-purple rounded-lg border-orange;
+
+  &:hover {
+    @apply bg-light-orange;
+  }
+}

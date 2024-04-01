@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  max-width: 1248px;
+  justify-content: center;
+  margin: 0 auto;
+}
+button.btn {
+  background: none;
+  border-radius: 12px;
+  border: 2px solid #d1d1d6;
+  color: #303030;
+  margin: 0 6px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+button.btn.active {
+  color: #ea3e70;
+  border: 2px solid #ea3e70;
+}
+
+.pagesbuttons {
+  display: flex;
+  position: relative;
+}

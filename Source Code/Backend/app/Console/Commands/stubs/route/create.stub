@@ -1,0 +1,39 @@
+<?php
+
+Route::group([
+    'prefix' => 'admin/DummyNames',
+    'as' => 'DummyName.admin.',
+    'namespace' => 'Admin',
+    'middleware' => 'manager_access',
+], function () {
+    /* -------------------------------- resource -------------------------------- */
+    Route::get('/', [
+        'as' => 'index',
+        'uses' => 'ManagerDummyClassController@index',
+    ]);
+
+    Route::get('create', [
+        'as' => 'create',
+        'uses' => 'ManagerDummyClassController@create',
+    ]);
+
+    Route::post('/', [
+        'as' => 'store',
+        'uses' => 'ManagerDummyClassController@store',
+    ]);
+
+    Route::get('edit/{DummyName}', [
+        'as' => 'edit',
+        'uses' => 'ManagerDummyClassController@edit',
+    ]);
+
+    Route::patch('update/{DummyName}', [
+        'as' => 'update',
+        'uses' => 'ManagerDummyClassController@update',
+    ]);
+
+    Route::delete('destroy/{DummyName}', [
+        'as' => 'destroy',
+        'uses' => 'ManagerDummyClassController@destroy',
+    ]);
+});

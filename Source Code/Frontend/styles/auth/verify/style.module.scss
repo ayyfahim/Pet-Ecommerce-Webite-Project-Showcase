@@ -1,0 +1,23 @@
+.wrapper{
+  .email{
+    @apply text-sm text-middle-black mt-5 mb-31px font-medium;
+  }
+  .passwordLabel{
+    @apply mb-7px  text-base font-bold text-lighter-black;
+  }
+  .password{
+    @apply w-full text-base px-21px py-19px border-0 rounded bg-darker-white placeholder-lighter-black;
+  }
+  .loginButton{
+    @apply w-full mt-29px flex justify-center py-5  border-0 border-transparent rounded-lg shadow-sm text-base font-bold text-purple bg-orange;
+  }
+  .bottomTextWrapper{
+    @apply flex justify-center mt-7;
+    .text{
+      @apply text-sm text-medium_black;
+    }
+    .button{
+      @apply font-bold text-sm text-medium_black;
+    }
+  }
+}

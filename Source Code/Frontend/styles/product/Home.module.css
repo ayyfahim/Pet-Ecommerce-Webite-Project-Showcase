@@ -1,0 +1,4 @@
+.home {
+    position: relative;
+    @apply mx-auto
+}

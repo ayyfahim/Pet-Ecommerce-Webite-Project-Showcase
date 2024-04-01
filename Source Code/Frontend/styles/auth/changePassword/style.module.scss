@@ -1,0 +1,20 @@
+.wrapper{
+  .email{
+    @apply text-xs text-middle-black mt-5 mb-31px font-medium;
+  }
+  .passwordLabel{
+    @apply mb-7px  text-base font-bold text-lighter-black;
+  }
+  .password{
+    @apply w-full text-base px-21px py-19px mb-6 border-0 rounded bg-darker-white placeholder-lighter-black;
+  }
+  .forgetWrapper{
+    @apply flex mt-2 justify-end;
+    .forget{
+      @apply text-sm text-middle-black; 
+    }
+  }
+  .loginButton{
+    @apply w-full mt-29px flex justify-center py-5  border-0 border-transparent rounded-lg shadow-sm text-base font-bold text-purple bg-orange;
+  }
+}

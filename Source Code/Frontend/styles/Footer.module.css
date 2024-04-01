@@ -1,0 +1,69 @@
+.wrapper {
+  @apply bg-light-purple pt-11 px-5 md:pt-8;
+}
+
+.disclaimer {
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 1.25rem;
+  @apply border-orange bg-light-orange mb-5;
+}
+
+.links {
+  @apply text-center flex flex-col sm:flex-row sm:text-left;
+}
+
+.links li {
+  @apply mb-3;
+}
+
+.subscribe {
+  margin-bottom: 1.5rem;
+}
+.smallFontDisplayFlex {
+  display: flex;
+  align-items: center;
+}
+.subscribe form input {
+  width: 100%;
+  height: 59px;
+  margin: 0 -11px 0 0;
+  padding: 11px 20px 11px 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: inline-block;
+  @apply focus:outline-none;
+}
+
+.subscribe form button {
+  width: 63px;
+  height: 59px;
+  padding: 20px 23px 21px 24px;
+  border-radius: 0 8px 8px 0;
+  background-color: #4a2072;
+  display: inline-block;
+  position: relative;
+}
+
+.payments {
+  @apply mt-5;
+}
+
+.paymentIcons {
+  @apply flex justify-center flex-wrap md:justify-start;
+}
+
+.paymentIcons > div {
+  min-width: 90px;
+  @apply px-3 py-4 text-center md:pr-5 md:pl-0;
+}
+
+.copyright {
+  @apply text-center text-base py-4 px-5 md:py-5;
+}
+
+@screen sm {
+  .links {
+    margin-top: 3rem;
+  }
+}

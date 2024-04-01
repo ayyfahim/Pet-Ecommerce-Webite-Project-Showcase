@@ -1,0 +1,9 @@
+<svg width="151" height="119" viewBox="0 0 151 119" xmlns="http://www.w3.org/2000/svg">
+    <g transform="rotate(12 7.94 93.931)" fill="none" fill-rule="evenodd">
+        <g stroke="#979797" stroke-dasharray="5">
+            <path d="M125 75C125 25.5 66.05-2.796 7.098 21"/>
+            <path d="M17.66.088C-.762 27.598-6.52 22.28 28.123 29.625"/>
+        </g>
+        <rect stroke="#FFF" stroke-width="2" fill="#EA3E70" x="118" y="76" width="15" height="15" rx="7.5"/>
+    </g>
+</svg>

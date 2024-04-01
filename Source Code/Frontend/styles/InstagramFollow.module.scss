@@ -1,0 +1,28 @@
+.photosSection {
+  font-size: 0;
+  overflow-x: scroll;
+  width: 100%;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    @apply hidden;
+  }
+
+  &::-webkit-scrollbar-track {
+    @apply hidden;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply hidden;
+  }
+}
+.photosWrapper {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+}
+.followUs {
+  padding: 25px;
+  @apply text-white text-center bg-pink mx-auto;
+}

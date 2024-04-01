@@ -1,0 +1,53 @@
+.wrapper {
+  padding: 40px 11px 59px 13px;
+  background: radial-gradient(circle at 100% 16%, #793bb7, #4a2072 83%);
+  @apply text-white;
+}
+.heading {
+  font-size: 1.25rem;
+  @apply font-bold text-center mb-3;
+}
+.description {
+  font-size: 1rem;
+  @apply px-4 text-center mb-5 max-w-2xl mx-auto;
+}
+.feedbacks {
+  @apply flex flex-col md:flex-row md:justify-around;
+}
+.feedback {
+  @apply md:px-4;
+}
+.feedbackAvatar {
+  @apply py-3 text-center;
+}
+.rating {
+  margin: 0 auto;
+  max-width: 170px;
+  @apply text-center flex justify-around;
+}
+.star {
+  @apply mx-1;
+}
+.feedbackTitle {
+  @apply font-bold my-3 px-3 text-center md:text-xl;
+}
+.feedbackText {
+  @apply text-center opacity-70;
+}
+.feedbackAuthor {
+  font-family: 'Playlist-Script';
+  @apply text-center text-pink pt-6 mb-20 text-xl md:mb-0;
+}
+
+@screen sm {
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+@screen md {
+  .wrapper {
+    background: radial-gradient(circle at 100% 16%, rgba(121, 59, 183, 0.8), #4a2072 83%),
+      url('../public/img/feedbacks/feedback-bg@2x.webp') bottom right / contain no-repeat;
+    @apply py-20;
+  }
+}

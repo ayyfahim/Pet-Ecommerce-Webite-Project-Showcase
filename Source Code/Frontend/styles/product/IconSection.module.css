@@ -1,0 +1,77 @@
+.iconSection {
+    padding: 20px 106px;
+    margin: 56px 0 48px 0;
+    @apply flex flex-row justify-between container mx-auto
+}
+.iconSection_item1 {
+    width: 233px;
+    @apply flex flex-col items-center
+}
+.iconSection_item2 {
+    width: 233px;
+    @apply flex flex-col items-center
+}
+.iconSection2 {
+    display: none;
+}
+.flexCol {
+    @apply flex flex-col items-center
+}
+.flexRow {
+    width: 100%;
+    margin: 10px 0;
+    @apply flex flex-row justify-between items-center
+}
+.text {
+    font-family: PlusJakartaSans;
+    font-size: 20px;
+    color: #262624;
+    @apply font-bold tracking-normal text-center
+}
+@media screen and (max-width: 1024px) {
+    .iconSection {
+        max-width: 1024px!important;
+    }
+    .iconSection {
+        padding: 0 40px;
+        max-width: 768px!important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .iconSection {
+        padding: 0 110px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .iconSection {
+        display: none;
+    }
+    .iconSection2 {
+        display: block;
+        margin: 30px 0;
+        padding: 0 50px;
+        @apply flex flex-col justify-between container mx-auto
+    }
+}
+@media screen and (max-width: 400px) {
+    .iconSection_item1 {
+        width: 233px;
+        @apply flex flex-row justify-start
+    }
+    .iconSection_item2 {
+        width: 233px;
+        @apply flex flex-row justify-end
+    }
+    .icon_img {
+        width: 32px;
+        height: 32px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .iconSection2 {
+        padding: 0 30px;
+        margin-top: 20px;
+        @apply flex flex-col justify-between container mx-auto
+    }
+}

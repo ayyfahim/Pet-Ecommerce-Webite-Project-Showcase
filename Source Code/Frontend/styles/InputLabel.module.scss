@@ -1,0 +1,19 @@
+.editLabelInput {
+}
+
+.label {
+  font-family: PlusJakartaSans;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #262624;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.input {
+  @apply w-full text-base px-21px py-19px border-0 rounded bg-darker-white placeholder-lighter-black;
+}

@@ -1,0 +1,66 @@
+// Global
+.main form {
+  @apply mx-auto mt-[14px] mb-[36px];
+}
+
+.wrapper {
+  @apply flex justify-center w-full;
+}
+
+.content {
+  @apply w-full container mx-4 sm:mx-0;
+}
+
+.section_title {
+  @apply lg:text-40px md:text-4xl sm:text-3xl text-xl font-bold text-purple;
+}
+
+.section_sub_title {
+  @apply text-xl font-bold text-lighter-black;
+}
+
+.section_desc {
+  @apply xl:text-base sm:text-sm text-base font-normal text-lighter-black;
+}
+
+.section_desc2 {
+  @apply xl:text-base sm:text-sm text-base font-normal text-darker-gray;
+}
+
+// Page
+.tabList {
+  width: 286px;
+  height: 334px;
+  padding: 38px 17px 27px 28px;
+  border-radius: 20px;
+  border: solid 1px #e7e7e7;
+  background-color: #fff;
+  margin-right: 32px;
+
+  @apply lg:block hidden;
+
+  h4 {
+    @apply text-lg font-bold text-full-black mb-10px;
+  }
+
+  button {
+    @apply block focus:border-none;
+
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.6;
+    letter-spacing: normal;
+    color: #262624;
+
+    &.active {
+      color: #4a2072;
+      font-weight: bold;
+    }
+  }
+}
+
+.tabPanels {
+  @apply flex-1;
+}

@@ -1,0 +1,21 @@
+.tabsRoot {
+  @apply flex flex-row w-full;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.tabRoot {
+  padding-bottom: 14px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-family: PlusJakartaSans;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+.tabActive {
+  color: #ea3e70;
+}

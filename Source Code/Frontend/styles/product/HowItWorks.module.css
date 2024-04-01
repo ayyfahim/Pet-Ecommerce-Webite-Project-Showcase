@@ -1,0 +1,43 @@
+.wrapper {
+    padding: 55px 1rem 1rem;
+    @apply bg-light-purple
+}
+
+.heading {
+    font-size: 1.25rem;
+    @apply font-bold text-purple text-center mb-4
+}
+
+.description {
+    font-size: 1rem;
+    @apply text-center text-darker-gray mb-5
+}
+
+.features {
+    @apply py-2
+}
+
+.feature {
+    margin-bottom: 3rem;
+}
+
+.featureNumber {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 3rem;
+    vertical-align: center;
+
+    @apply bg-purple text-white text-center font-bold mb-5
+}
+
+.featureTitle {
+    font-size: 1.25rem;
+    @apply font-bold text-center text-lighter-black mb-2
+}
+
+.featureText {
+    @apply text-center text-darker-gray
+}

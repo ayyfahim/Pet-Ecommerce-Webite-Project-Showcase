@@ -1,0 +1,150 @@
+// stylelint-disable property-disallowed-list, declaration-no-important
+
+//
+// Border
+//
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        // support of .border-sm (-md, -lg, -xl)
+        .border#{$infix} {
+            border: $border-width solid $border-color;
+        }
+        .border#{$infix}-0 {
+            border: 0;
+        }
+
+        .border#{$infix}-top {
+            border-top: $border-width solid $border-color;
+        }
+        .border#{$infix}-right {
+            border-right: $border-width solid $border-color;
+        }
+        .border#{$infix}-bottom {
+            border-bottom: $border-width solid $border-color;
+        }
+        .border#{$infix}-left {
+            border-left: $border-width solid $border-color;
+        }
+
+        .border#{$infix}-top-0 {
+            border-top: 0;
+        }
+        .border#{$infix}-right-0 {
+            border-right: 0;
+        }
+        .border#{$infix}-bottom-0 {
+            border-bottom: 0;
+        }
+        .border#{$infix}-left-0 {
+            border-left: 0;
+        }
+
+        .border#{$infix}-x {
+            border-left: $border-width solid $border-color;
+            border-right: $border-width solid $border-color;
+        }
+
+        .border#{$infix}-y {
+            border-top: $border-width solid $border-color;
+            border-bottom: $border-width solid $border-color;
+        }
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .border-#{$color} {
+        border-color: $value;
+    }
+}
+
+.border-white {
+    border-color: $white;
+}
+.border-gray-light {
+    border-color: #a7afb5;
+}
+.border-input {
+    border-color: $input-border-color;
+}
+
+//
+// Border-radius
+//
+
+.rounded-sm {
+    border-radius: $border-radius-sm;
+}
+
+.rounded {
+    border-radius: $border-radius;
+}
+
+.rounded-top {
+    border-top-left-radius: $border-radius !important;
+    border-top-right-radius: $border-radius !important;
+}
+.rounded-top-sm {
+    border-top-left-radius: $border-radius-sm !important;
+    border-top-right-radius: $border-radius-sm !important;
+}
+.rounded-top-lg {
+    border-top-left-radius: $border-radius-lg !important;
+    border-top-right-radius: $border-radius-lg !important;
+}
+
+.rounded-right {
+    border-top-right-radius: $border-radius !important;
+    border-bottom-right-radius: $border-radius !important;
+}
+.rounded-right-sm {
+    border-top-right-radius: $border-radius-sm !important;
+    border-bottom-right-radius: $border-radius-sm !important;
+}
+.rounded-right-lg {
+    border-top-right-radius: $border-radius-lg !important;
+    border-bottom-right-radius: $border-radius-lg !important;
+}
+
+.rounded-bottom {
+    border-bottom-right-radius: $border-radius !important;
+    border-bottom-left-radius: $border-radius !important;
+}
+.rounded-bottom-sm {
+    border-bottom-right-radius: $border-radius-sm !important;
+    border-bottom-left-radius: $border-radius-sm !important;
+}
+.rounded-bottom-lg {
+    border-bottom-right-radius: $border-radius-lg !important;
+    border-bottom-left-radius: $border-radius-lg !important;
+}
+
+.rounded-left {
+    border-top-left-radius: $border-radius !important;
+    border-bottom-left-radius: $border-radius !important;
+}
+.rounded-left-sm {
+    border-top-left-radius: $border-radius-sm !important;
+    border-bottom-left-radius: $border-radius-sm !important;
+}
+.rounded-left-lg {
+    border-top-left-radius: $border-radius-lg !important;
+    border-bottom-left-radius: $border-radius-lg !important;
+}
+
+.rounded-lg {
+    border-radius: $border-radius-lg !important;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.rounded-pill {
+    border-radius: $rounded-pill;
+}
+
+.rounded-0 {
+    border-radius: 0;
+}

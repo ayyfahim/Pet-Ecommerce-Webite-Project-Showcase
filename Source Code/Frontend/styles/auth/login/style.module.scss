@@ -1,0 +1,26 @@
+.wrapper {
+  .emailLabel {
+    @apply mb-7px text-base font-bold text-lighter-black;
+  }
+  .email {
+    @apply w-full text-base px-21px py-19px border-0 rounded bg-darker-white placeholder-lighter-black;
+  }
+  .emailButton {
+    @apply w-full mt-5 flex justify-center py-5  border-0 border-transparent rounded-lg shadow-sm text-base font-bold text-purple bg-orange;
+  }
+  .orWrapper {
+    @apply w-full flex justify-center my-1 sm:my-4;
+    .or {
+      @apply text-lg leading-or tracking-or font-bold;
+    }
+  }
+  .bottom_text {
+    @apply flex justify-center pt-1 sm:pt-17px;
+    .a_text {
+      @apply underline underline-offset-1 cursor-pointer;
+    }
+  }
+  .password {
+    @apply w-full text-base px-21px py-19px border-0 rounded bg-darker-white placeholder-lighter-black;
+  }
+}

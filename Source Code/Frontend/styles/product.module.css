@@ -1,0 +1,92 @@
+
+  .item {
+    position: relative;
+    width: 100%;
+    padding: 38px 16px;
+    margin: 0 12px;
+    border-radius: 20px;
+    border: solid 1px #e8e8e8;
+    background-color: #fff;
+    justify-content: inherit;
+    @apply flex flex-col items-center hover:shadow-product mx-auto
+  }
+  .popular {
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    width: 58px;
+    height: 21px;
+    padding: 2px 1px;
+    border-radius: 4px;
+    background-color: #ea3e70;
+    font-family: PlusJakartaSans;
+    font-size: 12px;
+    line-height: 1.33;
+    color: #fff;
+    @apply text-center font-bold tracking-normal
+  }
+  .item_img {
+    width: 196px;
+    height: 188px;
+    margin-bottom: 23px;
+    object-fit: contain;
+  }
+  .item_title {
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+    color: #262624;
+    @apply font-bold tracking-normal leading-normal text-center
+  }
+  .item_text {
+    margin: 12px 0 25px;
+    font-family: PlusJakartaSans;
+    font-size: 14px;
+    color: #262624;
+    @apply font-normal tracking-normal leading-normal text-center
+  }
+  .addCart_field {
+    width: 100%;
+    @apply flex flex-row justify-between items-center
+  }
+  .price {
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+    color: #262624;
+    @apply font-bold tracking-normal leading-normal
+  }
+  .addcart {
+    width: 136px;
+    height: 44px;
+    padding: 5px 0px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background-color: #f8b84a;
+    font-family: PlusJakartaSans;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    color: #4a2072;
+    @apply font-bold tracking-normal leading-normal text-center
+  }
+
+
+
+@media screen and (max-width: 1024px) {
+  .item_title {
+      font-size: 16px;
+  }
+  .item_text {
+      font: 14px;
+  }
+  .price {
+      font-size: 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper {
+      margin-top: 40px;
+  }
+  .item {
+      width: 90%;
+  }
+}
+

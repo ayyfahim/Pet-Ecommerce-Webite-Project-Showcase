@@ -1,0 +1,9 @@
+<svg width="140" height="108" viewBox="0 0 125 104" xmlns="http://www.w3.org/2000/svg">
+    <g transform="matrix(-1 0 0 1 123 1.088)" fill="none" fill-rule="evenodd">
+        <g stroke="#979797" stroke-dasharray="5">
+            <path d="M16 94.912c36.352 7 15.605-72.694 41.882-81.81 21.026-7.295 30.816-2.767 57.02 7.81"/>
+            <path d="M104.34 0c18.423 27.51 24.18 22.193-10.462 29.537"/>
+        </g>
+        <rect stroke="#FFF" stroke-width="2" fill="#EA3E70" x="-1" y="86.912" width="15" height="15" rx="7.5"/>
+    </g>
+</svg>

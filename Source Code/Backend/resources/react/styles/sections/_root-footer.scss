@@ -1,0 +1,22 @@
+.root-footer {
+	background-color: darken(desaturate(adjust-hue($primary, 1), 13.34), 42.35);
+	color: rgba(color-yiq(darken(desaturate(adjust-hue($primary, 1), 13.34), 42.35)), 0.6);
+	a:not(.logo) {
+		transition: $transition-base;
+		color: color-yiq(darken(desaturate(adjust-hue($primary, 1), 13.34), 42.35));
+		opacity: 0.6;
+		&:hover {
+			transition: $transition-base;
+			opacity: 1;
+		}
+	}
+	hr {
+		border-color: rgba(color-yiq(darken(desaturate(adjust-hue($primary, 1), 13.34), 42.35)), 0.6);
+	}
+	&__top {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+	&__bottom {
+	}
+}

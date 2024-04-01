@@ -1,0 +1,11 @@
+.customSelect {
+    @apply w-28 sm:w-32 h-8 flex justify-center text-center;
+    
+    .inputStyle {
+        background-image: none;
+        @apply appearance-none focus:ring-0 focus:shadow-none outline-white border-white text-xs sm:text-sm leading-3 px-0  placeholder-gray-400 focus-within:border-none focus-within:outline-none border-none rounded-none w-full text-medium_black z-10 flex text-center;
+        .option {
+          width: 240px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.wrapper {
+  @apply w-full h-50 bg-gradient-to-b from-auth-bg-top to-auth-bg-bottom text-white  text-left relative overflow-hidden;
+  .content {
+    @apply container mx-auto h-full flex flex-col justify-center relative z-20;
+    .heading {
+      @apply font-bold text-22px text-40px leading-tight text-white pb-0 sm:pb-3 m-4 sm:m-0;
+    }
+    .description {
+      @apply text-base max-w-[781px] m-4 lg:flex hidden justify-start sm:m-0;
+    }
+  }
+  .imageWrapper {
+    @apply container mx-auto relative z-10 block;
+    .leftImage {
+      @apply absolute border-[9px] rounded-full w-[84px] h-[84px] -bottom-12 border-white border-opacity-40 left-14;
+    }
+    .rightImage {
+      @apply absolute w-44 h-44 bottom-0 right-10;
+    }
+  }
+}

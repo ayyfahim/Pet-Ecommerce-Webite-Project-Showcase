@@ -1,0 +1,83 @@
+.wrapper {
+  .cartWrapper {
+    @apply w-full px-4;
+    .cart {
+      @apply my-8 container mx-auto max-w-[768px] border rounded-lg border-dark-white px-10 pt-8;
+      .title {
+        @apply text-4xl leading-[1.33] text-auth-bg-bottom font-bold;
+      }
+      .payment {
+        @apply border-2 rounded-lg border-dark-green bg-dark-green bg-opacity-10 flex  items-center px-2 my-6;
+        .image {
+          @apply min-w-[40px] h-10 flex justify-center items-center mx-3 my-3;
+        }
+        .description {
+          @apply text-base font-bold text-medium_black;
+        }
+      }
+      .TotalOrder {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        margin: 0 0 0 8px;
+        font-family: PlusJakartaSans;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #ea3e70;
+
+        @media (max-width: 768px) {
+          @apply justify-center;
+        }
+      }
+      .RewardAndApply {
+        display: flex;
+        @apply flex flex-nowrap md:flex-row flex-col;
+
+        div:first-child {
+          @media (max-width: 768px) {
+            @apply mx-auto mb-[24px];
+          }
+          @media (max-width: 572px) {
+            input {
+              @apply w-[190px];
+              &::placeholder {
+                @apply text-sm;
+              }
+            }
+
+            button {
+              width: 78px;
+              height: 62px;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .ContinueButton {
+          width: 246px;
+          height: 62px;
+          margin: 30px 0 0 20px;
+          border-radius: 8px;
+          background-color: #f8b84a;
+          font-family: PlusJakartaSans;
+          font-size: 16px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.32px;
+          text-align: center;
+          color: #4a2072;
+
+          @media (max-width: 768px) {
+            @apply m-0 mx-auto mb-[40px];
+          }
+        }
+      }
+    }
+  }
+}

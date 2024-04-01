@@ -1,0 +1,30 @@
+.wrapper{
+  .email{
+    @apply text-xs text-middle-black mt-5 mb-31px font-medium;
+  }
+  .passwordLabel{
+    @apply mb-7px  text-base font-bold text-lighter-black;
+  }
+  .password{
+    @apply w-full text-base px-21px py-19px mb-6 border-0 rounded bg-darker-white placeholder-lighter-black;
+  }
+  .showBtnWrapper{
+    @apply flex justify-end;
+    .showBtn{
+      @apply text-xs text-lighter-black;
+    }
+  }
+  .bottom_text{
+    @apply flex flex-row items-center;
+    .checkbox{
+      @apply h-6 w-6 bg-lighter-black;
+    }
+    .a_text{
+      @apply underline underline-offset-1 cursor-pointer ;
+    }
+  }
+  .loginButton{
+    @apply w-full mt-8 flex justify-center py-5  border-0 border-transparent rounded-lg shadow-sm text-base font-bold text-purple bg-orange;
+  }
+
+}

@@ -1,0 +1,90 @@
+.wrapper {
+  position: relative;
+  padding: 220px 20px 43px;
+  font-size: 0;
+  @apply text-white text-center md:text-left relative;
+  height: 602px;
+  .BackgroundImg {
+    object-fit: cover;
+    pointer-events: none;
+  }
+  @media screen and (max-width: 639px) {
+    .BackgroundImg {
+      object-fit: cover;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 179px !important;
+      height: 306px !important;
+      opacity: 0.4;
+    }
+    background: radial-gradient(circle at 72% 41%, #793bb7, #4a2072 96%, #4a2072 96%);
+  }
+}
+
+.content {
+  @apply container mx-auto relative z-10;
+}
+
+.description {
+  font-size: 1rem;
+  margin: 0 0 26px;
+  @apply px-1;
+}
+
+.heading {
+  font-size: 1.75rem;
+  margin-bottom: 14px;
+  line-height: 1.2;
+  @apply font-bold;
+}
+.heading span {
+  font-weight: 400;
+  font-family: 'Playlist-Script';
+}
+button.cta {
+  margin-bottom: 20px;
+  width: 100%;
+}
+button.alt {
+  border-radius: 0;
+  padding: 0;
+  background: none;
+  font-size: 0.875rem;
+  @apply text-orange border-solid border-b-2 border-orange md:inline-block;
+}
+
+.alt:before {
+  top: 3px;
+  left: -16px;
+  content: url('../public/img/hero-section/link-pointer.svg');
+  @apply absolute border-none hidden md:block;
+}
+
+@screen sm {
+  .heading {
+    font-size: 3.5rem;
+    max-width: 650px;
+  }
+
+  .description {
+    max-width: 650px;
+  }
+
+  .cta {
+    max-width: 190px;
+    padding: 1rem 3rem;
+  }
+
+  .wrapper {
+    padding: 124px 20px 96px;
+  }
+  button.cta {
+    margin-bottom: 0px;
+    width: fit-content;
+  }
+}

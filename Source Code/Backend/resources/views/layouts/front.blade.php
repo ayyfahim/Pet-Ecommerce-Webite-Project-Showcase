@@ -1,0 +1,11 @@
+@extends('layouts.app')
+@section('styles')
+    @yield('f-styles')
+@endsection
+@section('content')
+@endsection
+@section('modals')
+@endsection
+@section('scripts')
+    @yield('f-scripts')
+@endsection

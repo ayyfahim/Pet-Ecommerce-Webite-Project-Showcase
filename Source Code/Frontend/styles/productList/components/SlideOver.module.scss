@@ -1,0 +1,30 @@
+.wrapper{
+  @apply fixed inset-0 z-50 overflow-hidden;
+  .contentWrapper{
+    @apply absolute inset-y-0 left-0 flex;
+    .content{
+      @apply relative w-screen;
+      .bottomFixed{
+        @apply flex flex-col h-full overflow-y-scroll bg-white;
+        .main{
+          @apply pb-16;
+          .closeButton{
+            @apply flex items-center justify-center w-4 h-4 mt-6 ml-5;
+          }
+        } 
+        .bottomWrapper{
+          @apply absolute bottom-0 left-0 z-10 w-screen p-6 bg-white border-t border-gray-200 shadow-xl;
+          .bottom{
+            @apply flex items-center justify-between w-full;
+            .filterCount{
+              @apply text-sm;
+            }
+            .applyButton{
+              @apply w-24 h-8 text-sm rounded-md outline-none text-purple bg-orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}

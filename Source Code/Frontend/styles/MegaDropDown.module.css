@@ -1,0 +1,36 @@
+.megaWrapper {
+  /* top: 64px; */
+  left: 1rem;
+  right: 1rem;
+  max-width: 1248px;
+  @apply xl:hover:block absolute bg-none z-50  top-10 sm:top-16;
+}
+
+.megaContainer {
+  border-radius: 6px;
+  box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.08);
+  /* margin-top: 24px; */
+  @apply bg-white flex flex-col sm:flex-row mx-auto;
+}
+
+.font-15 {
+  font-size: 15px;
+}
+.features {
+  @apply flex flex-row flex-wrap text-center place-content-evenly place-items-center;
+}
+
+.features > div {
+  padding: 1.5rem;
+}
+.icon {
+  margin-bottom: 10px;
+  width: 55px;
+  height: 55px;
+  @apply text-center;
+}
+
+.iconDescription {
+  font-size: 1rem;
+  @apply font-bold text-lighter-black text-center md:pt-2;
+}

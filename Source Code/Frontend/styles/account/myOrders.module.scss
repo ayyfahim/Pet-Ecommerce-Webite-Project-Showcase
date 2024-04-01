@@ -1,0 +1,76 @@
+@mixin font-mixin($font-size, $font-weight, $color) {
+  font-family: PlusJakartaSans;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color;
+}
+
+.editProfile {
+  @apply flex flex-row flex-wrap;
+}
+
+.title {
+  @include font-mixin(20px, bold, #4a2072);
+  line-height: 1.38;
+  @media (max-width: 1024px) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  @screen md {
+    @include font-mixin(32px, bold, #4a2072);
+  }
+}
+
+.searchBox {
+  position: relative;
+  padding: 13px 17px;
+  @apply w-[285px] h-[45px] bg-light-purple border rounded-md border-dark-purple border-solid;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 17px;
+    z-index: 1;
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @apply w-full h-full pl-[50px] text-sm text-dark-purple border-0 bg-transparent;
+
+    &::placeholder {
+      @apply text-sm text-dark-purple;
+    }
+
+    &:focus {
+      @apply border-transparent bg-transparent outline-transparent shadow-none ring-0;
+    }
+  }
+}
+
+.order_box {
+  .order_item {
+    @apply text-base text-lighter-black rounded-2xl border-solid border-dark-white border mb-17px;
+
+    &::last-child {
+      @apply mb-0;
+    }
+
+    .order_header {
+      @apply text-lg;
+    }
+  }
+}
+
+.MyPagination {
+  display: table;
+  margin: 40px auto 0 auto;
+}

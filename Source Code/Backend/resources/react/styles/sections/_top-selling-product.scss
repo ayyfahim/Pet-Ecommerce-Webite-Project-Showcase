@@ -1,0 +1,10 @@
+.top-selling-products-section {
+    .product-card {
+        .card-img-top {
+            height: 250px !important;
+        }
+        &.loading {
+            height: 500px;
+        }
+    }
+}

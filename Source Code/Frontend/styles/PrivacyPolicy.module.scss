@@ -1,0 +1,47 @@
+.main form {
+  @apply mx-auto mt-[14px] mb-[36px];
+}
+
+.wrapper {
+  @apply flex justify-center w-full;
+}
+
+.content {
+  @apply w-full container mx-4 sm:mx-0;
+
+  .contentBlock {
+    @apply pt-57px;
+
+    &:last-child {
+      @apply pb-57px;
+    }
+    h4 {
+      @apply text-xl font-bold text-lighter-black pb-18px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+    }
+
+    p {
+      @apply text-base text-lighter-black pb-25px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.38;
+      letter-spacing: normal;
+
+      &:last-child {
+        @apply pb-0;
+      }
+    }
+
+    ul {
+      @apply pl-31px pb-25px;
+
+      li {
+        @apply pb-7px text-more-lighter-black;
+      }
+    }
+  }
+}

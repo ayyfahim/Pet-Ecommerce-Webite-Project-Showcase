@@ -1,0 +1,57 @@
+.wrapper {
+    padding: 0 0;
+    @apply mx-auto md:flex
+}
+
+.heading {
+    font-size: 1.25rem;
+    margin-bottom: 0.3rem;
+    @apply text-center font-bold md:text-left
+}
+
+.description {
+    font-size: 1rem;
+    @apply text-darker-gray text-center px-4 md:text-left md:px-0
+}
+
+.features {
+    @apply flex basis-4 flex-row flex-wrap text-center place-content-evenly place-items-center mt-5 md:basis-auto md:w-3/4 md:mt-0
+}
+
+.features > div {
+    padding: 1.5rem;
+    @apply transition duration-500 hover:scale-110;
+}
+
+.features > div:hover .iconDescription {
+    @apply transition duration-500 text-pink;
+}
+
+.icon {
+    margin-bottom: 10px;
+    width: 55px;
+    height: 55px;
+    @apply text-center
+}
+
+.iconDescription {
+    font-size: 1rem;
+    @apply font-bold text-lighter-black text-center md:pt-2 
+}
+
+@screen md {
+    .wrapper {
+        border-radius: 15px;
+        border: solid 1px #e8e8e8;
+        padding: 26px 0px 26px 45px;
+    }
+
+    .icon {
+        width: 79px;
+        height: 79px;
+    }
+
+    .features > div {
+        padding: 0;
+    }
+}

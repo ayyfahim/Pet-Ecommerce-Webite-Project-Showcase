@@ -1,0 +1,102 @@
+.account {
+    @apply flex flex-row justify-center container mx-auto;
+    margin-top: 32px;
+}
+.menuBar {
+    @apply flex flex-col;
+    width: 22%;
+    height: 622px;
+    padding: 36px 0 2px 0;
+    border-radius: 16px;
+    border: solid 1px #e7e7e7;
+    background-color: #fff;
+}
+.avatar_field {
+    position: relative;
+}
+.avatar {
+    @apply mx-auto;
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    border-radius: 50%
+}
+.carmera {
+    position: absolute;
+    top: 60px;
+    left: 46%;
+    cursor:pointer;
+}
+.profile_name {
+    @apply font-bold tracking-normal text-center;
+    margin: 16px 0;
+    font-family: PlusJakartaSans;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #262624;
+}
+.menuDivider {
+    border-top: 1px solid #d7d7d7;
+    margin-bottom: 8px;
+}
+.menuItem {
+    @apply flex justify-start items-center;
+    cursor: pointer;
+    height: 48px;
+    margin-top: 4px;
+}
+.menuText {
+    margin: 0 0 0 10px;
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #262624
+}
+.menuText_active {
+    margin: 0 0 0 10px;
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #ea3e70;
+}
+.menuIcon {
+    margin-left: 26px;
+    color: #262624;
+}
+.menuIcon_active {
+    margin-left: 22.5px;
+    color: #ea3e70;
+}
+.active_border {
+    border-left: 4px solid #ea3e70;
+    width: 4px;
+    height: 48px;
+}
+
+@media screen and (max-width: 1024px) {
+   .menuBar {
+       width: 35%;
+   }
+}
+@media screen and (max-width: 810px) {
+    .account {
+        @apply flex flex-col justify-center container mx-auto;
+    }
+    .menuBar {
+        width: 400px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 450px) {
+    .menuBar {
+        width: 286px;
+    }
+}

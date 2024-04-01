@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'PlusJakartaSans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PlusJakartaSans'),
+    url('../public/fonts/PlusJakartaSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('IBM Plex Sans'),
+    url('../public/fonts/PlusJakartaSans-Bold.woff') format('woff');
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+html,
+body {
+    @apply font-regular
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,4 @@
+sku,title,supplier_code,active,featured,cost_price,regular_price,sale_price,quantity,brand,show_brand,supplier,categories,additional_categories,google_category,affiliate_link,video_url,excerpt,description,delivery_information,warranty_information,terms_conditions,gallery,shipping_cost,shipping_days,notes
+x-0002,IPhone,,1,0,1000,1200,1150,20,Apple,1,Karim,"Technology/Mobile
+Smart Phone",test,test,,,short description,long description,,,,"https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg
+https://i.pinimg.com/550x/89/82/05/8982051a8704aa47b59f29bba7f2c9b2.jpg",,,

@@ -1,0 +1,16 @@
+.main form {
+  @apply mx-auto mt-[14px] mb-[36px];
+}
+
+.wrapper {
+  @apply flex justify-center w-full;
+}
+
+.content {
+  @apply flex flex-wrap justify-center gap-x-6 gap-y-6 w-full relative max-w-[1248px];
+}
+.PaginateWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 64px auto;
+}

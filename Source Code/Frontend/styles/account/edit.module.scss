@@ -1,0 +1,24 @@
+@mixin font-mixin($font-size, $font-weight, $color) {
+  font-family: PlusJakartaSans;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color;
+}
+
+.editProfile {
+  @apply flex flex-row flex-wrap;
+}
+
+.title {
+  @include font-mixin(20px, bold, #4a2072);
+  line-height: 1.38;
+  margin-bottom: 30px;
+
+  @screen md {
+    @include font-mixin(32px, bold, #4a2072);
+  }
+}

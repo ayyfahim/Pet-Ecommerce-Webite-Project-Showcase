@@ -1,0 +1,29 @@
+.mainButton {
+  font-size: 14px;
+  color: #4a2072;
+  font-family: 'PlusJakartaSans', arial;
+  background: #f8b84a;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 14px 28px;
+  transition: 0.4s;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+.mainButton.big {
+  font-size: 16px;
+  padding: 20px 53px;
+}
+.mainButton:hover {
+  opacity: 0.6;
+}
+.mainButton.reversed {
+  flex-direction: row-reverse;
+}
+
+.mainButton.rounded {
+  border-radius: 50%;
+}

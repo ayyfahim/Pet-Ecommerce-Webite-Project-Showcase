@@ -1,0 +1,24 @@
+.wrapper{
+  @apply fixed inset-0 z-10 overflow-y-auto;
+  .contentWrapper{
+    @apply flex items-center justify-center min-h-screen text-center;
+    .transition1{
+      @apply fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75
+    }
+    .content{
+      @apply inline-block pt-5 pb-16 mx-5 align-middle transition-all transform bg-white rounded-lg px-7 sm:max-w-forget_modal;
+      .closeWrapper{
+        @apply absolute top-0 right-0 block pt-4 pr-4;
+        .close{
+          @apply text-gray-400 bg-white border-0 rounded-md hover:text-gray-500 focus:outline-none ;
+        }
+      }
+      .logo{
+        @apply flex items-center justify-center w-20 h-20 mx-auto mt-10 bg-green-100 rounded-full;
+      }
+      .text{
+        @apply text-xl font-bold leading-6 text-lighter-black;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.wrapper {
+    background: radial-gradient(circle at 72% 41%, #793bb7, #4a2072 91%, #4a2072 91%);
+    @apply py-7 text-white
+}
+
+.heading {
+    font-size: 1.375rem;
+    @apply mb-2 font-bold
+}
+
+.description {
+    @apply m-0
+}

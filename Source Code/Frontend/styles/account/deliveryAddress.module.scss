@@ -1,0 +1,92 @@
+@mixin font-mixin($font-size, $font-weight, $color) {
+  font-family: PlusJakartaSans;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color;
+}
+
+.title {
+  @include font-mixin(20px, bold, #4a2072);
+  line-height: 1.38;
+  margin-bottom: 30px;
+
+  @screen md {
+    @include font-mixin(32px, bold, #4a2072);
+  }
+}
+
+.deliveryAddressBox {
+  @apply flex flex-row flex-wrap justify-center;
+
+  .item {
+    @apply lg:w-2/4 w-3/4 mb-31px;
+    &:nth-child(odd) {
+      @apply lg:pr-[15px];
+    }
+    &:nth-child(even) {
+      @apply lg:pl-[15px];
+    }
+  }
+
+  .addressItem {
+    @apply h-full py-25px px-29px rounded-2xl border border-solid border-dark-white;
+
+    h4 {
+      @apply text-xl font-bold text-lighter-black mb-17px;
+    }
+
+    p {
+      @apply text-base font-medium text-lighter-black mb-17px;
+    }
+
+    ul {
+      @apply flex flex-row flex-wrap items-center;
+
+      li {
+        @apply max-h-18px leading-[18px] px-10px border-l border-solid border-l-full-black text-sm text-purple;
+
+        &:first-child {
+          @apply pl-0 border-none;
+        }
+
+        &.default {
+          @apply flex-1 text-right border-none;
+
+          a {
+            padding: 2px 6px 3px;
+            @apply rounded bg-pink text-xs text-white;
+            @media only screen and (max-width: 1280px) and (min-width: 1024px) {
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+            }
+          }
+        }
+      }
+    }
+
+    &.createAddressItem {
+      @apply flex flex-col items-center justify-center;
+
+      h4 {
+        @apply text-base font-bold text-lighter-black mb-17px text-center;
+      }
+
+      .icon {
+        @apply p-7px rounded-lg border-solid border-2 border-orange mb-17px;
+        svg {
+          @apply w-[30px] h-[30px];
+        }
+      }
+    }
+  }
+}
+
+.MyPagination {
+  display: table;
+  margin: 0 auto 0 auto;
+}

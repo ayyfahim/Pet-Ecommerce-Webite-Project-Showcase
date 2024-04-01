@@ -1,0 +1,15 @@
+.photo {
+  min-width: 155px;
+  width: 320px;
+  height: 320px;
+  transition: 0.4s;
+  @apply relative block;
+}
+.photo:hover {
+  opacity: 0.6;
+}
+.icon {
+  top: 8px;
+  right: 8px;
+  @apply absolute;
+}
