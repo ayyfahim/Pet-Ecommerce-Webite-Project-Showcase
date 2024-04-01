@@ -1,0 +1,32 @@
+<?php
+
+return [
+    "" => "",
+    "add_rating" => "Add Rating",
+    "add_review" => "Add Review",
+    "all_reviews" => "All Reviews",
+    "as_customer" => "As a customer",
+    "as_provider" => "As a provider",
+    "customer_ratings" => "Customer Ratings",
+    "delete_review_label" => "This review will be deleted",
+    "filter_reviews" => "Filter reviews",
+    "my_reviews" => "My Reviews",
+    "no_reviews" => "No reviews added yet",
+    "overall_rating" => "Overall Rating",
+    "post_review" => "Post Review",
+    "provider_rating" => "Provider Rating",
+    "rate" => "Rate",
+    "restaurant_rating" => "Restaurant Rating",
+    "restaurants_reviews" => "Restaurants Reviews",
+    "review" => "Review",
+    "review_date" => "Review Date",
+    "reviews" => "Reviews",
+    "search_reviews" => "Search reviews",
+    "services_reviews" => "Services Reviews",
+    "stars" => "Stars",
+    "submit_review" => "Submit a Review",
+    "submit_review_label" => "Please review the service you received",
+    "update_review" => "Update review",
+    "view_all_reviews" => "View All Reviews",
+    "write_review" => "Write Review"
+];

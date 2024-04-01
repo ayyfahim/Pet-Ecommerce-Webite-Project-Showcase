@@ -1,0 +1,124 @@
+*.un-select {
+    &,
+    * {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    }
+}
+
+.customized-scroll {
+    max-height: 270px;
+    overflow-y: auto;
+
+    &.custom-select[multiple],
+    &.custom-select[size]:not([size="1"]) {
+        padding-right: 0 !important;
+    }
+
+    &::-webkit-scrollbar {
+        width: 0.75em;
+        height: 0.75em;
+        @include border-radius($border-radius-sm);
+    }
+
+    &::-webkit-scrollbar-track {
+        @include box-shadow(none);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $border-color;
+        background-clip: padding-box;
+        border: 3px solid transparent;
+        @include border-radius($border-radius-sm);
+    }
+
+    &::-webkit-scrollbar-button {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+}
+
+.line-clamp {
+    display: -webkit-box;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.line-clamp-1 {
+    height: #{$headings-line-height * 1}em; /* exactly two lines */
+    -webkit-line-clamp: 1;
+}
+.line-clamp-2 {
+    height: #{$headings-line-height * 2}em; /* exactly two lines */
+    -webkit-line-clamp: 2;
+}
+.line-clamp-3 {
+    height: #{$headings-line-height * 3}em; /* exactly two lines */
+    -webkit-line-clamp: 3;
+}
+
+.isPageLoading {
+    position: relative;
+    overflow: hidden !important;
+    &:before,
+    &:after {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    &:before {
+        content: "";
+        background-color: $white;
+        z-index: 5000;
+    }
+
+    &:after {
+        content: "";
+        z-index: 10000;
+        background-image: url("../../assets/images/Preloader.gif");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 10%;
+        @include media-breakpoint-down(lg) {
+            background-size: 15%;
+        }
+        @include media-breakpoint-down(md) {
+            background-size: 25%;
+        }
+        @include media-breakpoint-down(sm) {
+            background-size: 35%;
+        }
+    }
+}
+
+.fill {
+    fill: $body-color;
+}
+
+.stroke {
+    stroke: $body-color;
+}
+
+@each $color, $value in $colors {
+    .fill--color-#{$color} {
+        fill: $value !important;
+    }
+
+    .stroke--color-#{$color} {
+        stroke: $value !important;
+    }
+}

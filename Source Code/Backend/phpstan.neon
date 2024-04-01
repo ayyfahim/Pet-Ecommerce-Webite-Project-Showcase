@@ -1,0 +1,11 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+    - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
+    - ./vendor/phpstan/phpstan-deprecation-rules/rules.neon
+parameters:
+    excludes_analyse:
+        - */tests/*/data/*
+    level: 5
+    ignoreErrors:
+        - '#PHPDoc tag.#'
+        - '#.typehint.#'

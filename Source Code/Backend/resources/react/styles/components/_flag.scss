@@ -1,0 +1,14 @@
+.flag {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 100%;
+        top: 0;
+        height: 100%;
+        border-right: 7.5px solid transparent;
+        border-bottom: 15px solid $success;
+        border-left: 1px solid $success;
+        border-top: 15px solid $success;
+    }
+}

@@ -1,0 +1,39 @@
+.category-single-card {
+    @extend .rounded-lg;
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        border-top-left-radius: $border-radius-lg;
+        border-top-right-radius: $border-radius-lg;
+    }
+}
+.category-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    .card-img {
+        height: 425px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        &-overlay {
+            padding: 2.8125rem;
+            & > * {
+                z-index: 2;
+            }
+        }
+    }
+
+    &:hover {
+        .stretched-link {
+            &,
+            &::after {
+                transition: $transition-base;
+            }
+            &::after {
+                background-color: rgba($black, 0.25);
+            }
+        }
+    }
+}
