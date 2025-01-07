@@ -1,1 +1,0 @@
-export const CHANGE_GLOBALS = "CHANGE_GLOBALS";

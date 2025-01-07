@@ -1,8 +1,0 @@
-@if $enable-debug==true {
-	*:not(path):not(g) {
-		color: rgba($white, 0.9) !important;
-		background: rgba($primary, 0.5) !important;
-		outline: solid $border-width * 4 rgba($white, 0.5) !important;
-		box-shadow: none !important;
-	}
-}

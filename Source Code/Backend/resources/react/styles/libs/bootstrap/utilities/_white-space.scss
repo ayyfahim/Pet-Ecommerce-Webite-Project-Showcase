@@ -1,8 +1,0 @@
-// stylelint-disable declaration-no-important
-
-// Common values
-@each $white-space in $white-spaces {
-    .white-space-#{$white-space} {
-        white-space: $white-space !important;
-    }
-}

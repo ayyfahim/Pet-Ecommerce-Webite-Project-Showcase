@@ -1,6 +1,0 @@
-.wrapper {
-    margin: 0 auto;
-}
-.cookies {
-    @apply flex flex-row justify-between items-center
-}
